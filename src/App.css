@@ -1,0 +1,33 @@
+.body{
+  background-color: black;
+  height: auto;
+  width: auto;
+}
+
+.abc{
+  border-color: black;
+  color: blue;
+  background-color: aqua;
+  height: auto;
+  width: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.fade-wrapper {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.8s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

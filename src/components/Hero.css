@@ -1,0 +1,174 @@
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #17171b;
+  color: white;
+  position: relative;
+  height: 260px;
+  box-shadow: 0 40px 70px rgb(201, 51, 51);
+
+}
+.text {
+  padding-top: 5%;
+}
+
+.hero .highlight {
+  color: #6ca2d8;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.top-left {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-image: url(/public/imh.png);
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.resume-btn {
+  padding: 0.5rem 1rem;
+  background-color: #49404042;
+  opacity: 30%;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  animation: slideInFromRight 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.animate-delay-2 {
+  animation-delay: 0.6s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.animate-delay-3 {
+  animation-delay: 0.9s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.9s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.animate-delay-5 {
+  animation-delay: 1.2s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  background: rgb(65, 114, 49);
+  break-inside: auto;
+}
+
+.stars-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall 5s infinite linear, twinkle 2s infinite ease-in-out;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(calc(100px * (random() - 0.5)));
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 2s;
+}
+
+.fade-in.delay {
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.top-left.img1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  opacity: 70%; 
+}
+
+.top-left.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

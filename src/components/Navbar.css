@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #585158b4;
+    opacity: 90%;
+    color: rgb(10, 10, 10);
+    position: fixed;
+    width: 1700px;
+    height: 25px;
+  }
+  
+  .navbar ul {
+    margin-left: 930px;
+    display: flex;
+    list-style: none;
+    gap: 33px;
+  }
+  
+  .navbar li {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+    
+  }
+  
+  .navbar li:hover {
+    color: #39454d;
+    opacity: 60%;
+  }
+  
